@@ -1,0 +1,5 @@
+$ ctr 1.7.36 deprecations list
+ID                                                LAST OCCURRENCE                   MESSAGE    
+io.containerd.deprecation/cri-registry-mirrors    2026-09-28T20:41:42.439195342Z    The `mirrors` property of `[plugins."io.containerd.grpc.v1.cri".registry]` is deprecated since containerd v1.5 and will be removed in containerd v2.1. Use `config_path` instead.
+io.containerd.deprecation/pull-schema-1-image     2026-09-28T20:41:54.047880144Z    Schema 1 images are deprecated since containerd v1.7 and removed in containerd v2.0. Since containerd v1.7.8, schema 1 images are identified by the "io.containerd.image/converted-docker-schema1" label.
+[exit 0]

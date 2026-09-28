@@ -1,0 +1,27 @@
+# A containerd config in the style many Kubernetes nodes were set up with in
+# the 1.x era: config version 2, CRI settings in the old sections, registry
+# mirrors inline, and a leftover runtime v1 section.
+version = 2
+
+[plugins."io.containerd.grpc.v1.cri"]
+  sandbox_image = "registry.k8s.io/pause:3.9"
+
+  [plugins."io.containerd.grpc.v1.cri".containerd]
+    snapshotter = "overlayfs"
+    default_runtime_name = "runc"
+
+    [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc]
+      runtime_type = "io.containerd.runc.v2"
+
+      [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc.options]
+        SystemdCgroup = true
+
+  # In the demo the mirror is a local server that only logs requests (and
+  # answers 404, so containerd falls back to Docker Hub). That shows whether
+  # each version still reads this setting.
+  [plugins."io.containerd.grpc.v1.cri".registry.mirrors."docker.io"]
+    endpoint = ["http://127.0.0.1:5055"]
+
+[plugins."io.containerd.runtime.v1.linux"]
+  shim = "containerd-shim"
+  runtime = "runc"

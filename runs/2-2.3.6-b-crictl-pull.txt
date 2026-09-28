@@ -1,0 +1,4 @@
+$ crictl pull docker.io/library/busybox:1.37.0
+time="2026-09-28T23:41:58+03:00" level=warning msg="Config \"/etc/crictl.yaml\" does not exist, trying next: \"/home/biliev/projects/containerd-2-upgrade-check/bin/crictl.yaml\""
+Image is up to date for sha256:ad4f11f7c85f87c0a6d6c0fe492ad53f9cdcff6e8c88b881360c70eff701c67b
+[exit 0]

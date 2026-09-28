@@ -1,0 +1,4 @@
+$ pull_quiet 1.7.36 docker.io/library/busybox:1.24
+unpacking linux/amd64 sha256:dc53f06b7ab95434d92cd20c00409fe5b5ded8d3b68f861e709f2e4b49067242...
+done: 323.503075ms	
+[exit 0]

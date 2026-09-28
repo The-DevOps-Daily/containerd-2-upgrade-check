@@ -1,0 +1,17 @@
+$ sudo CONTAINERD_CONFIG=configs/old-node-config.toml CONTAINERD_ADDRESS=/tmp/ctd-check/containerd.sock CTR=bin/containerd-1.7.36/ctr scripts/check-node.sh
+== containerd version
+  Version:  v1.7.36
+  Revision: 2892c2042ee7fbd3be0e5bdc675e07b5acedb0bf
+
+== config: /home/biliev/projects/containerd-2-upgrade-check/configs/old-node-config.toml
+config version: 2
+WARN inline registry.mirrors: deprecated; move to config_path and hosts.toml files
+WARN runtime v1 section: removed in 2.0; containerd 2.x ignores it
+
+== deprecations containerd has already seen (1.7.x and later)
+ID                                                LAST OCCURRENCE                   MESSAGE    
+io.containerd.deprecation/cri-registry-mirrors    2026-09-28T20:42:56.348357196Z    The `mirrors` property of `[plugins."io.containerd.grpc.v1.cri".registry]` is deprecated since containerd v1.5 and will be removed in containerd v2.1. Use `config_path` instead.
+io.containerd.deprecation/pull-schema-1-image     2026-09-28T20:43:01.287861149Z    Schema 1 images are deprecated since containerd v1.7 and removed in containerd v2.0. Since containerd v1.7.8, schema 1 images are identified by the "io.containerd.image/converted-docker-schema1" label.
+
+== images that were converted from schema 1 (they keep working; pulling them again on 2.x fails)
+k8s.io  docker.io/library/busybox:1.24

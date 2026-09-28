@@ -1,0 +1,5 @@
+$ sh -c for v in 1.7.36 2.3.6 2.4.1; do /home/biliev/projects/containerd-2-upgrade-check/bin/containerd-$v/containerd --version; done
+containerd github.com/containerd/containerd v1.7.36 2892c2042ee7fbd3be0e5bdc675e07b5acedb0bf
+containerd github.com/containerd/containerd/v2 v2.3.6 ee2735368117d2eb259779949d5e75cdafec9761
+containerd github.com/containerd/containerd/v2 v2.4.1 f2551031d7276a770f65f98c9b52e57e7dad07e8
+[exit 0]

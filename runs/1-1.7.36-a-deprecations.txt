@@ -1,0 +1,4 @@
+$ ctr 1.7.36 deprecations list
+ID                                                LAST OCCURRENCE                   MESSAGE    
+io.containerd.deprecation/cri-registry-mirrors    2026-09-28T20:41:42.439195342Z    The `mirrors` property of `[plugins."io.containerd.grpc.v1.cri".registry]` is deprecated since containerd v1.5 and will be removed in containerd v2.1. Use `config_path` instead.
+[exit 0]

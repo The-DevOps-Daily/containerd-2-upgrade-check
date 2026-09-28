@@ -1,0 +1,4 @@
+$ pull_quiet 2.3.6 docker.io/library/busybox:1.24
+time="2026-09-28T23:42:05+03:00" level=warning msg="DEPRECATION: The `mirrors` property of `[plugins.\"io.containerd.grpc.v1.cri\".registry]` is deprecated since containerd v1.5 and will be removed in containerd v2.4. Use `config_path` instead."
+ctr: schema 1 image manifests are no longer supported: invalid argument
+[exit 1]

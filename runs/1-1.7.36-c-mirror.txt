@@ -1,0 +1,6 @@
+$ mirror_report
+requests the docker.io mirror received: 5
+HEAD /v2/library/busybox/manifests/1.36.0?ns=docker.io
+GET /v2/library/busybox/manifests/sha256:9e2bbca079387d7965c3a9cee6d0c53f4f4e63ff7637877a83c4c05f2a666112?ns=docker.io
+GET /v2/library/busybox/manifests/sha256:1af0a016aaa24dd9ddf2ff0771160a68d6394eff88c9c0d5239c93a21ea06f9f?ns=docker.io
+[exit 0]

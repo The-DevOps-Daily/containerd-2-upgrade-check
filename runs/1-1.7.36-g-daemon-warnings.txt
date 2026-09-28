@@ -1,0 +1,2 @@
+time="2026-09-28T23:41:42.439096047+03:00" level=warning msg="`mirrors` is deprecated, please use `config_path` instead"
+time="2026-09-28T23:41:54.047658573+03:00" level=warning msg="conversion from schema 1 images is deprecated" name="docker.io/library/busybox:1.24" schema1digest="sha256:8ea3273d79b47a8b6d018be398c17590a4b5ec604515f416c5b797db9dde3ad8"

@@ -1,0 +1,4 @@
+time="2026-09-28T23:41:57+03:00" level=warning msg="Configuration migrated from version 2, use `containerd config migrate` to avoid migration" t="31.333µs"
+time="2026-09-28T23:41:57.663632290+03:00" level=warning msg="failed check for fsverity support" error="enable fsverity failed: operation not supported" path=/tmp/ctd-demo/root/io.containerd.content.v1.content
+time="2026-09-28T23:41:57.686671849+03:00" level=warning msg="`mirrors` is deprecated, please use `config_path` instead"
+time="2026-09-28T23:41:57.686709515+03:00" level=warning msg="Found 'Registry.Mirrors' in CRI config which is incompatible with transfer service (not supported with transfer service (also deprecated)). Falling back to local image pull mode."

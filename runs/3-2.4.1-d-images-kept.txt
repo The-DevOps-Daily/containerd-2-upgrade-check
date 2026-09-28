@@ -1,0 +1,5 @@
+$ ctr 2.4.1 -n demo images ls
+time="2026-09-28T23:42:17+03:00" level=warning msg="DEPRECATION: The `mirrors` property of `[plugins.\"io.containerd.grpc.v1.cri\".registry]` is deprecated since containerd v1.5 and will be removed in containerd v2.7. Use `config_path` instead."
+REF                            TYPE                                       DIGEST                                                                  SIZE      PLATFORMS   LABELS                                                                                                               
+docker.io/library/busybox:1.24 application/vnd.oci.image.manifest.v1+json sha256:dc53f06b7ab95434d92cd20c00409fe5b5ded8d3b68f861e709f2e4b49067242 661.3 KiB linux/amd64 io.containerd.image/converted-docker-schema1=sha256:8ea3273d79b47a8b6d018be398c17590a4b5ec604515f416c5b797db9dde3ad8 
+[exit 0]
