@@ -1,0 +1,6 @@
+$ scripts/find-schema1.sh
+registry-1.docker.io/library/busybox:1.24  200  application/vnd.docker.distribution.manifest.v1+prettyjws
+registry-1.docker.io/library/busybox:1.36.0  200  application/vnd.docker.distribution.manifest.list.v2+json
+gcr.io/google-containers/busybox:1.24  200  application/vnd.docker.distribution.manifest.v1+prettyjws
+gcr.io/google-containers/pause:0.8.0  200  application/vnd.docker.distribution.manifest.v1+prettyjws
+quay.io/coreos/etcd:v2.2.5  200  application/vnd.docker.distribution.manifest.v1+prettyjws
